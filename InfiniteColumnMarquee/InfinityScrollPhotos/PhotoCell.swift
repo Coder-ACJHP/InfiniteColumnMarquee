@@ -8,15 +8,15 @@
 import UIKit
 
 class PhotoCell: UICollectionViewCell {
-    
+
     static let reuseIdentifier = String(describing: PhotoCell.self)
-    
-    public var displayImage: UIImage? = nil {
+
+    public var displayImage: UIImage? {
         didSet {
             imageView.image = displayImage
         }
     }
-    
+
     private let imageView: UIImageView = {
         let imageView = UIImageView(image: nil)
         imageView.contentMode = .scaleAspectFill
@@ -26,27 +26,27 @@ class PhotoCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
+
     private var isAnimating = false
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         initCommon()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
+
         initCommon()
     }
-    
+
     private final func initCommon() {
-        
+
         backgroundColor = .clear
         contentView.backgroundColor = .clear
         contentView.clipsToBounds = true
-        
+
         contentView.addSubview(imageView)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -55,16 +55,16 @@ class PhotoCell: UICollectionViewCell {
             imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
-        
+
         imageView.image = nil
         isAnimating = false
     }
-    
+
     // MARK: - Public
-    
+
     public final func startFadeAnimation() {
         guard isAnimating == false else { return }
         isAnimating.toggle()

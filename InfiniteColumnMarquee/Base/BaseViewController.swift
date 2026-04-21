@@ -8,7 +8,7 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    
+
     private let loadingProgressContainerView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.backgroundColor = .black.withAlphaComponent(0.6)
@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         view.isHidden = true
         return view
     }()
-    
+
     private let loadingProgressView: UIVisualEffectView = {
         let blurEffect = UIBlurEffect(style: .regular)
         let view = UIVisualEffectView(effect: blurEffect)
@@ -25,14 +25,14 @@ class BaseViewController: UIViewController {
         view.layer.masksToBounds = true
         return view
     }()
-    
+
     private let progressView: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
         indicator.color = .black
         indicator.hidesWhenStopped = false
         return indicator
     }()
-    
+
     public let progressLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .medium)
@@ -41,7 +41,7 @@ class BaseViewController: UIViewController {
         label.minimumScaleFactor = 0.5
         return label
     }()
-    
+
     // Used for object removal progress label
     fileprivate var loadingCount = 0
     fileprivate var progressLabelCount = 0
@@ -51,11 +51,11 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         setupLoadingView()
-        
+
     }
-    
+
     fileprivate final func setupLoadingView() {
-        
+
         view.addSubview(loadingProgressContainerView)
         loadingProgressContainerView.anchor(
             top: view.topAnchor,
@@ -63,13 +63,13 @@ class BaseViewController: UIViewController {
             bottom: view.bottomAnchor,
             trailing: view.trailingAnchor
         )
-        
+
         loadingProgressContainerView.addSubview(loadingProgressView)
         loadingProgressView.centerAnchor(
             to: loadingProgressContainerView,
             withSize: CGSize(width: 240, height: 70)
         )
-        
+
         loadingProgressView.contentView.addSubview(progressView)
         progressView.anchor(
             top: loadingProgressView.contentView.topAnchor,
@@ -79,7 +79,7 @@ class BaseViewController: UIViewController {
             padding: UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 0),
             size: CGSize(width: 20, height: 0)
         )
-        
+
         loadingProgressView.contentView.addSubview(progressLabel)
         progressLabel.anchor(
             top: loadingProgressView.contentView.topAnchor,
@@ -89,26 +89,26 @@ class BaseViewController: UIViewController {
             padding: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 20)
         )
     }
-    
+
     public func showLoadingProgress(withPercentage: Bool = true) {
         if loadingCount == 0 {
             loadingCount += 1
-            
+
             progressLabel.text = "Loading"
             loadingProgressContainerView.isHidden = false
             view.bringSubviewToFront(loadingProgressContainerView)
             self.progressView.startAnimating()
-            
+
             if withPercentage {
                 self.startCountPercentage()
             }
         }
     }
-    
+
     public func showLoadingProgress(_ title: String = "Loading", forFilters: Bool = false) {
         if loadingCount == 0 {
             loadingCount += 1
-            
+
             loadingProgressContainerView.backgroundColor = forFilters ? .clear : UIColor.black.withAlphaComponent(0.6)
             progressLabel.text = title
             loadingProgressContainerView.isHidden = false
@@ -124,7 +124,7 @@ class BaseViewController: UIViewController {
         if loadingCount > 0 {
             loadingCount -= 1
         }
-        
+
         if loadingCount == 0 {
             loadingProgressContainerView.isHidden = true
             progressView.stopAnimating()
@@ -135,7 +135,7 @@ class BaseViewController: UIViewController {
 
     fileprivate func startCountPercentage() {
         resetLabelUpdate()
-        
+
         self.displayLink = CADisplayLink(target: self, selector: #selector(self.updateLabelText))
         self.displayLink?.preferredFramesPerSecond = 6
         self.displayLink?.add(to: .current, forMode: .common)
@@ -152,12 +152,10 @@ class BaseViewController: UIViewController {
             resetLabelUpdate()
         }
     }
-    
+
     private func resetLabelUpdate() {
         displayLink?.invalidate()
         displayLink = nil
         progressLabelCount = 0
     }
 }
-
-

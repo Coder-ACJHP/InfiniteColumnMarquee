@@ -12,7 +12,7 @@ import SwiftUI
 @available(iOS 13, *)
 extension UIViewController {
     private struct Preview: UIViewControllerRepresentable {
-        //var is used for injecting the current view controller
+        // var is used for injecting the current view controller
         let viewController: UIViewController
 
         func makeUIViewController(context: Context) -> UIViewController {
@@ -50,11 +50,11 @@ extension UIScrollView {
 }
 
 extension UICollectionView {
-    
+
     private struct theAction {
         static var _isAnimating: Bool = false
     }
-    
+
     var isAnimating: Bool {
         get {
             guard let result = objc_getAssociatedObject(self, &theAction._isAnimating) as? Bool else {
@@ -68,9 +68,8 @@ extension UICollectionView {
     }
 }
 
-
 extension UIScrollView {
-    
+
     func updateContentSize() {
         let contentRect: CGRect = self.subviews.reduce(into: .zero) { rect, view in
             rect = rect.union(view.frame)
@@ -105,77 +104,77 @@ extension UIColor {
 }
 
 extension UIView {
-    
+
     func fillContainer() {
         anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor,
                bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor)
     }
-    
+
     func centerAnchor(to view: UIView, withSize: CGSize? = nil) {
         translatesAutoresizingMaskIntoConstraints = false
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
+
         if let size = withSize {
             widthAnchor.constraint(equalToConstant: size.width).isActive = true
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
-    
+
     // When you use this function don't pass "size" parameter into "anchor" function
     func anchorSize(to view: UIView) {
         widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
-    
+
     func anchor(top: NSLayoutYAxisAnchor? = nil, leading: NSLayoutXAxisAnchor? = nil,
                 bottom: NSLayoutYAxisAnchor? = nil, trailing: NSLayoutXAxisAnchor? = nil,
                 padding: UIEdgeInsets = .zero, size: CGSize = .zero ) {
-        
+
         translatesAutoresizingMaskIntoConstraints = false
-        
+
         if let top = top {
             topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
         }
-        
+
         if let leading = leading {
             leadingAnchor.constraint(equalTo: leading, constant: padding.left).isActive = true
         }
-        
+
         if let bottom = bottom {
             bottomAnchor.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
         }
-        
+
         if let trailing = trailing {
             trailingAnchor.constraint(equalTo: trailing, constant: -padding.right).isActive = true
         }
-        
+
         if size.width != 0 {
             widthAnchor.constraint(equalToConstant: size.width).isActive = true
         }
-        
+
         if size.height != 0 {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
-    
+
     func deactiveAllConstraints() {
         NSLayoutConstraint.deactivate(self.allConstraints)
     }
-    
+
     func activeAllConstraints() {
         NSLayoutConstraint.activate(self.allConstraints)
     }
-    
+
     func findConstraint(layoutAttribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
         if let constraints = superview?.constraints {
-            for constraint in constraints where itemMatch(constraint: constraint, layoutAttribute: layoutAttribute){
+            for constraint in constraints where itemMatch(constraint: constraint, layoutAttribute: layoutAttribute) {
                 return constraint
             }
         }
         return nil
     }
-    
+
     func itemMatch(constraint: NSLayoutConstraint, layoutAttribute: NSLayoutConstraint.Attribute) -> Bool {
         if let firstItem = constraint.firstItem as? UIView, let secondItem = constraint.secondItem as? UIView {
             let firstItemMatch = firstItem == self && constraint.firstAttribute == layoutAttribute
@@ -184,10 +183,10 @@ extension UIView {
         }
         return false
     }
-    
+
     private var allConstraints: [NSLayoutConstraint] {
         var view: UIView? = self
-        var constraints:[NSLayoutConstraint] = []
+        var constraints: [NSLayoutConstraint] = []
         while let currentView = view {
             constraints += currentView.constraints.filter {
                 return $0.firstItem as? UIView === self || $0.secondItem as? UIView === self

@@ -1,0 +1,3 @@
+# App identifiers
+app_identifier("com.coder.app.InfinityScrollAnimation")
+apple_id("hexa.octabin@gmail.com")
