@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F289AAAD2F981C5E008851AB /* Simulator Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F289AAAC2F981C5E008851AB /* Simulator Screenshot.png */; };
+		F289AAAD2F981C5E008851AB /* SimulatorScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F289AAAC2F981C5E008851AB /* SimulatorScreenshot.png */; };
 		F2D6DB6F2B07A3AB00981047 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DB6E2B07A3AB00981047 /* BaseViewController.swift */; };
 		F2F6DA502AFBAD2900E16754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA4F2AFBAD2900E16754 /* AppDelegate.swift */; };
 		F2F6DA542AFBAD2900E16754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA532AFBAD2900E16754 /* ViewController.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F289AAAC2F981C5E008851AB /* Simulator Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screenshot.png"; sourceTree = "<group>"; };
+		F289AAAC2F981C5E008851AB /* SimulatorScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimulatorScreenshot.png; sourceTree = "<group>"; };
 		F2D6DB6E2B07A3AB00981047 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F2F6DA4C2AFBAD2900E16754 /* InfiniteColumnMarquee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteColumnMarquee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6DA4F2AFBAD2900E16754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		F289AAAB2F981C4F008851AB /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				F289AAAC2F981C5E008851AB /* Simulator Screenshot.png */,
+				F289AAAC2F981C5E008851AB /* SimulatorScreenshot.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F6DA5C2AFBAD2A00E16754 /* LaunchScreen.storyboard in Resources */,
-				F289AAAD2F981C5E008851AB /* Simulator Screenshot.png in Resources */,
+				F289AAAD2F981C5E008851AB /* SimulatorScreenshot.png in Resources */,
 				F2F6DA592AFBAD2A00E16754 /* Assets.xcassets in Resources */,
 				F2F6DA572AFBAD2900E16754 /* Main.storyboard in Resources */,
 			);
