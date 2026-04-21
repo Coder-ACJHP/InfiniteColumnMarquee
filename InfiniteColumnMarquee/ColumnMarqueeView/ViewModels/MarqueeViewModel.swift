@@ -22,8 +22,8 @@ final class MarqueeViewModel {
         self.imageProvider = imageProvider
         self.state = MarqueeViewState(
             columnImages: Array(repeating: [], count: columnCount),
-            headerTitle: "Welcome to Anylight",
-            description: "Discover our amazing AI tools.\nEnjoy editing photos with advanced photo editor."
+            headerTitle: "Welcome to Animation",
+            description: "Discover amazing marquee animation.\nEnjoy watching your photos in advanced animator."
         )
     }
 
