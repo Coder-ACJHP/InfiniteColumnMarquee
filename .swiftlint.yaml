@@ -4,6 +4,13 @@ disabled_rules:
   - force_cast
   - force_try
   - type_body_length
+identifier_name:
+  allowed_symbols: ["_"]
+  min_length: 3
+  max_length: 40
+  excluded: 
+    - _isAnimating
+    - _id
 opt_in_rules:
   - empty_count
   - vertical_whitespace

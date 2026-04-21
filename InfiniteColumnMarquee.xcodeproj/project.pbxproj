@@ -8,31 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		F289AAAD2F981C5E008851AB /* SimulatorScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F289AAAC2F981C5E008851AB /* SimulatorScreenshot.png */; };
+		F289AABD2F982799008851AB /* InfiniteColumnMarqueeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289AABB2F982799008851AB /* InfiniteColumnMarqueeTests.swift */; };
+		F29D3B7E2F982AEE004FCA77 /* MarqueeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D3B7D2F982AEE004FCA77 /* MarqueeIntent.swift */; };
+		F29D3B802F982B13004FCA77 /* MarqueeColumnSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D3B7F2F982B13004FCA77 /* MarqueeColumnSpec.swift */; };
+		F29D3B822F982B25004FCA77 /* MarqueeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D3B812F982B25004FCA77 /* MarqueeViewState.swift */; };
+		F29D3B842F982B46004FCA77 /* MarqueeImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D3B832F982B46004FCA77 /* MarqueeImageProvider.swift */; };
+		F2A1BRDG2B08000100981047 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1BRDF2B08000100981047 /* DataSource.swift */; };
+		F2A1MVVM2B08000100981047 /* MarqueeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1MVVF2B08000100981047 /* MarqueeViewModel.swift */; };
 		F2D6DB6F2B07A3AB00981047 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DB6E2B07A3AB00981047 /* BaseViewController.swift */; };
 		F2F6DA502AFBAD2900E16754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA4F2AFBAD2900E16754 /* AppDelegate.swift */; };
-		F2F6DA542AFBAD2900E16754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA532AFBAD2900E16754 /* ViewController.swift */; };
+		F2F6DA542AFBAD2900E16754 /* MarqueeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA532AFBAD2900E16754 /* MarqueeViewController.swift */; };
 		F2F6DA572AFBAD2900E16754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6DA552AFBAD2900E16754 /* Main.storyboard */; };
 		F2F6DA592AFBAD2A00E16754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F6DA582AFBAD2A00E16754 /* Assets.xcassets */; };
 		F2F6DA5C2AFBAD2A00E16754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6DA5A2AFBAD2A00E16754 /* LaunchScreen.storyboard */; };
-		F2F6DA642AFBAE1E00E16754 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA632AFBAE1E00E16754 /* PhotoCell.swift */; };
+		F2F6DA642AFBAE1E00E16754 /* MarqueeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA632AFBAE1E00E16754 /* MarqueeViewCell.swift */; };
 		F2F6DA662AFBB52C00E16754 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA652AFBB52C00E16754 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F289AAB62F98278E008851AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2F6DA442AFBAD2900E16754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2F6DA4B2AFBAD2900E16754;
+			remoteInfo = InfiniteColumnMarquee;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F289AAAC2F981C5E008851AB /* SimulatorScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimulatorScreenshot.png; sourceTree = "<group>"; };
+		F289AAB22F98278E008851AB /* InfiniteColumnMarqueeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteColumnMarqueeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F289AABB2F982799008851AB /* InfiniteColumnMarqueeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteColumnMarqueeTests.swift; sourceTree = "<group>"; };
+		F29D3B7D2F982AEE004FCA77 /* MarqueeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeIntent.swift; sourceTree = "<group>"; };
+		F29D3B7F2F982B13004FCA77 /* MarqueeColumnSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeColumnSpec.swift; sourceTree = "<group>"; };
+		F29D3B812F982B25004FCA77 /* MarqueeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewState.swift; sourceTree = "<group>"; };
+		F29D3B832F982B46004FCA77 /* MarqueeImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeImageProvider.swift; sourceTree = "<group>"; };
+		F2A1BRDF2B08000100981047 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		F2A1MVVF2B08000100981047 /* MarqueeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewModel.swift; sourceTree = "<group>"; };
 		F2D6DB6E2B07A3AB00981047 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F2F6DA4C2AFBAD2900E16754 /* InfiniteColumnMarquee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteColumnMarquee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6DA4F2AFBAD2900E16754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2F6DA532AFBAD2900E16754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2F6DA532AFBAD2900E16754 /* MarqueeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewController.swift; sourceTree = "<group>"; };
 		F2F6DA562AFBAD2900E16754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F6DA582AFBAD2A00E16754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F6DA5B2AFBAD2A00E16754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F6DA5D2AFBAD2A00E16754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2F6DA632AFBAE1E00E16754 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		F2F6DA632AFBAE1E00E16754 /* MarqueeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewCell.swift; sourceTree = "<group>"; };
 		F2F6DA652AFBB52C00E16754 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F289AAAF2F98278E008851AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2F6DA492AFBAD2900E16754 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,13 +83,59 @@
 			path = Screenshots;
 			sourceTree = "<group>";
 		};
-		F2D6DB422B07962400981047 /* InfinityScrollPhotos */ = {
+		F289AABC2F982799008851AB /* InfiniteColumnMarqueeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2F6DA532AFBAD2900E16754 /* ViewController.swift */,
-				F2F6DA632AFBAE1E00E16754 /* PhotoCell.swift */,
+				F289AABB2F982799008851AB /* InfiniteColumnMarqueeTests.swift */,
 			);
-			path = InfinityScrollPhotos;
+			path = InfiniteColumnMarqueeTests;
+			sourceTree = "<group>";
+		};
+		F289AABE2F982A8C008851AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F29D3B7D2F982AEE004FCA77 /* MarqueeIntent.swift */,
+				F29D3B7F2F982B13004FCA77 /* MarqueeColumnSpec.swift */,
+				F29D3B812F982B25004FCA77 /* MarqueeViewState.swift */,
+				F29D3B832F982B46004FCA77 /* MarqueeImageProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F29D3B852F982C5A004FCA77 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1MVVF2B08000100981047 /* MarqueeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F29D3B862F982C6C004FCA77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6DA532AFBAD2900E16754 /* MarqueeViewController.swift */,
+				F2F6DA632AFBAE1E00E16754 /* MarqueeViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F29D3B872F982C7A004FCA77 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1BRDF2B08000100981047 /* DataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F2D6DB422B07962400981047 /* ColumnMarqueeView */ = {
+			isa = PBXGroup;
+			children = (
+				F29D3B872F982C7A004FCA77 /* Data */,
+				F289AABE2F982A8C008851AB /* Models */,
+				F29D3B852F982C5A004FCA77 /* ViewModels */,
+				F29D3B862F982C6C004FCA77 /* Views */,
+			);
+			path = ColumnMarqueeView;
 			sourceTree = "<group>";
 		};
 		F2D6DB432B07963E00981047 /* Base */ = {
@@ -100,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				F2F6DA4E2AFBAD2900E16754 /* InfiniteColumnMarquee */,
+				F289AABC2F982799008851AB /* InfiniteColumnMarqueeTests */,
 				F2F6DA4D2AFBAD2900E16754 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				F2F6DA4C2AFBAD2900E16754 /* InfiniteColumnMarquee.app */,
+				F289AAB22F98278E008851AB /* InfiniteColumnMarqueeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +199,7 @@
 				F2D6DB442B07964A00981047 /* Utilities */,
 				F2D6DB452B07965800981047 /* StoryBoards */,
 				F2D6DB462B07966D00981047 /* Resources */,
-				F2D6DB422B07962400981047 /* InfinityScrollPhotos */,
+				F2D6DB422B07962400981047 /* ColumnMarqueeView */,
 			);
 			path = InfiniteColumnMarquee;
 			sourceTree = "<group>";
@@ -127,6 +207,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F289AAB12F98278E008851AB /* InfiniteColumnMarqueeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F289AABA2F98278E008851AB /* Build configuration list for PBXNativeTarget "InfiniteColumnMarqueeTests" */;
+			buildPhases = (
+				F289AAAE2F98278E008851AB /* Sources */,
+				F289AAAF2F98278E008851AB /* Frameworks */,
+				F289AAB02F98278E008851AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F289AAB72F98278E008851AB /* PBXTargetDependency */,
+			);
+			name = InfiniteColumnMarqueeTests;
+			packageProductDependencies = (
+			);
+			productName = InfiniteColumnMarqueeTests;
+			productReference = F289AAB22F98278E008851AB /* InfiniteColumnMarqueeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F2F6DA4B2AFBAD2900E16754 /* InfiniteColumnMarquee */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2F6DA602AFBAD2A00E16754 /* Build configuration list for PBXNativeTarget "InfiniteColumnMarquee" */;
@@ -151,9 +251,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
+					F289AAB12F98278E008851AB = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = F2F6DA4B2AFBAD2900E16754;
+					};
 					F2F6DA4B2AFBAD2900E16754 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -173,11 +277,19 @@
 			projectRoot = "";
 			targets = (
 				F2F6DA4B2AFBAD2900E16754 /* InfiniteColumnMarquee */,
+				F289AAB12F98278E008851AB /* InfiniteColumnMarqueeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F289AAB02F98278E008851AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2F6DA4A2AFBAD2900E16754 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,19 +304,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F289AAAE2F98278E008851AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F289AABD2F982799008851AB /* InfiniteColumnMarqueeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2F6DA482AFBAD2900E16754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F6DA542AFBAD2900E16754 /* ViewController.swift in Sources */,
+				F2A1BRDG2B08000100981047 /* DataSource.swift in Sources */,
+				F29D3B7E2F982AEE004FCA77 /* MarqueeIntent.swift in Sources */,
+				F2A1MVVM2B08000100981047 /* MarqueeViewModel.swift in Sources */,
+				F29D3B802F982B13004FCA77 /* MarqueeColumnSpec.swift in Sources */,
+				F2F6DA542AFBAD2900E16754 /* MarqueeViewController.swift in Sources */,
 				F2D6DB6F2B07A3AB00981047 /* BaseViewController.swift in Sources */,
-				F2F6DA642AFBAE1E00E16754 /* PhotoCell.swift in Sources */,
+				F2F6DA642AFBAE1E00E16754 /* MarqueeViewCell.swift in Sources */,
 				F2F6DA502AFBAD2900E16754 /* AppDelegate.swift in Sources */,
+				F29D3B822F982B25004FCA77 /* MarqueeViewState.swift in Sources */,
+				F29D3B842F982B46004FCA77 /* MarqueeImageProvider.swift in Sources */,
 				F2F6DA662AFBB52C00E16754 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F289AAB72F98278E008851AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2F6DA4B2AFBAD2900E16754 /* InfiniteColumnMarquee */;
+			targetProxy = F289AAB62F98278E008851AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2F6DA552AFBAD2900E16754 /* Main.storyboard */ = {
@@ -226,6 +360,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F289AAB82F98278E008851AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N26XM7U465;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.test.InfiniteColumnMarqueeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfiniteColumnMarquee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InfiniteColumnMarquee";
+			};
+			name = Debug;
+		};
+		F289AAB92F98278E008851AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N26XM7U465;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.test.InfiniteColumnMarqueeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfiniteColumnMarquee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InfiniteColumnMarquee";
+			};
+			name = Release;
+		};
 		F2F6DA5E2AFBAD2A00E16754 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,6 +592,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F289AABA2F98278E008851AB /* Build configuration list for PBXNativeTarget "InfiniteColumnMarqueeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F289AAB82F98278E008851AB /* Debug */,
+				F289AAB92F98278E008851AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F2F6DA472AFBAD2900E16754 /* Build configuration list for PBXProject "InfiniteColumnMarquee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

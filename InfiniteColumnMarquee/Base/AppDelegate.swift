@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let bounds = UIScreen.main.bounds
         window = UIWindow(frame: bounds)
-        let rootViewController = ViewController()
+        let rootViewController = MarqueeViewController()
         let navigationController = UINavigationController(rootViewController: rootViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

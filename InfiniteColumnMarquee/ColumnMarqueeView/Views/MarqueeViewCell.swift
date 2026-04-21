@@ -1,5 +1,5 @@
 //
-//  PhotoCell.swift
+//  MarqueeViewCell.swift
 //  InfinityScrollAnimation
 //
 //  Created by Coder ACJHP on 8.11.2023.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class PhotoCell: UICollectionViewCell {
+class MarqueeViewCell: UICollectionViewCell {
 
-    static let reuseIdentifier = String(describing: PhotoCell.self)
+    static let reuseIdentifier = String(describing: MarqueeViewCell.self)
 
     public var displayImage: UIImage? {
         didSet {
