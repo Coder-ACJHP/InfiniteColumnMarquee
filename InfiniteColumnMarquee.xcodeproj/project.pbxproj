@@ -16,6 +16,7 @@
 		F2A1BRDG2B08000100981047 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1BRDF2B08000100981047 /* DataSource.swift */; };
 		F2A1MVVM2B08000100981047 /* MarqueeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1MVVF2B08000100981047 /* MarqueeViewModel.swift */; };
 		F2D6DB6F2B07A3AB00981047 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D6DB6E2B07A3AB00981047 /* BaseViewController.swift */; };
+		F2D745812F9839E600993A7D /* MarqueeScrollCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D745802F9839E600993A7D /* MarqueeScrollCoordinator.swift */; };
 		F2F6DA502AFBAD2900E16754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA4F2AFBAD2900E16754 /* AppDelegate.swift */; };
 		F2F6DA542AFBAD2900E16754 /* MarqueeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6DA532AFBAD2900E16754 /* MarqueeViewController.swift */; };
 		F2F6DA572AFBAD2900E16754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6DA552AFBAD2900E16754 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		F2A1BRDF2B08000100981047 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		F2A1MVVF2B08000100981047 /* MarqueeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewModel.swift; sourceTree = "<group>"; };
 		F2D6DB6E2B07A3AB00981047 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F2D745802F9839E600993A7D /* MarqueeScrollCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeScrollCoordinator.swift; sourceTree = "<group>"; };
 		F2F6DA4C2AFBAD2900E16754 /* InfiniteColumnMarquee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteColumnMarquee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6DA4F2AFBAD2900E16754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F6DA532AFBAD2900E16754 /* MarqueeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A1BRDF2B08000100981047 /* DataSource.swift */,
+				F2D745802F9839E600993A7D /* MarqueeScrollCoordinator.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				F29D3B7E2F982AEE004FCA77 /* MarqueeIntent.swift in Sources */,
 				F2A1MVVM2B08000100981047 /* MarqueeViewModel.swift in Sources */,
 				F29D3B802F982B13004FCA77 /* MarqueeColumnSpec.swift in Sources */,
+				F2D745812F9839E600993A7D /* MarqueeScrollCoordinator.swift in Sources */,
 				F2F6DA542AFBAD2900E16754 /* MarqueeViewController.swift in Sources */,
 				F2D6DB6F2B07A3AB00981047 /* BaseViewController.swift in Sources */,
 				F2F6DA642AFBAE1E00E16754 /* MarqueeViewCell.swift in Sources */,
